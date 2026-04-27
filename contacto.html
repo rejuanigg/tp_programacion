@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+        <style>
+        a, ul, li {
+            text-decoration: none;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav style="width: 100%; height: 200px; background-color: aliceblue;">
+            <ul style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+                <a href="/yerbas/index.html">Home</a>
+                <a href="/yerbas/info.html">Informacion</a>
+                <a href="/yerbas/contacto.html">Contacto</a>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>¿Quieres Contactarte con Nosotros?</h1>
+    <div>
+        <form action="" method="POST">
+            
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>            
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias y Consultas</legend>
+                
+                <div>
+                    <label for="pais">País de residencia:</label>
+                    <select id="pais" name="pais">
+                        <option value="ar">Argentina</option>
+                        <option value="uy">Uruguay</option>
+                        <option value="py">Paraguay</option>
+                        <option value="cl">Chile</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>¿Cómo prefieres tu yerba?</p>
+                    <input type="radio" id="con-palo" name="preferencia" value="con-palo">
+                    <label for="con-palo">Con Palo</label><br>
+                    <input type="radio" id="sin-palo" name="preferencia" value="sin-palo">
+                    <label for="sin-palo">Sin Palo o despalada</label>
+                </div>
+
+                <div>
+                    <p>Intereses:</p>
+                    <input type="checkbox" id="novedades" name="intereses" value="novedades">
+                    <label for="novedades">Recibir novedades</label><br>
+                    <input type="checkbox" id="ofertas" name="intereses" value="ofertas">
+                    <label for="ofertas">Ofertas especiales</label>
+                </div>
+
+                <div>
+                    <label for="user-message">Mensaje:</label><br>
+                    <textarea id="user-message" name="mensaje" style="min-height: 100px; min-width: 250px; max-width: 400px;"></textarea>
+                </div>
+            </fieldset>
+
+            <div style="margin-top: 20px;">
+                <button type="submit">Enviar Mensaje</button>
+                <button type="reset">Limpiar Formulario</button>
+            </div>
+
+        </form>
+    </div>
+    <footer style="width: 100%; height: 200px; background-color: aliceblue; text-align: center;"> 
+        <p>Tecnicatura en Análisis de Sistemas Informáticos - Programación III</p>
+        <p>Copyright &copy; 2026 - Rios Esteban</p>
+        <ul style="display: flex; justify-content: center; gap: 20px; padding: 0;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">Informacion</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

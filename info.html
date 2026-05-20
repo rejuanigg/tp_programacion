@@ -4,122 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info - Yerbas</title>
-    <style>
-        a, ul, li {
-            text-decoration: none;
-            list-style: none;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
-<body>
-    <header>
-        <nav style="width: 100%; height: 200px; background-color: aliceblue;">
-            <ul style="height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
-                <a href="/yerbas/index.html">Home</a>
-                <a href="/yerbas/info.html">Informacion</a>
-                <a href="/yerbas/contacto.html">Contacto</a>
+
+<body class="page">
+    <header class="header">
+        <nav class="header__nav">
+            <img class="header__icon" src="./assets/sol.png" alt="">
+            <ul class="header__menu">
+                <li class="header__item"><a class="header__link" href="./index.html">Home</a></li>
+                <li class="header__item"><a class="header__link" href="./info.html">Informacion</a></li>
+                <li class="header__item"><a class="header__link" href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>¿Porqué un Top?</h1>
-        <img src="./img/ere.jpg" alt="principal">
-        <p style="text-align: justify;">
-            Elegir la mejor yerba no es tarea fácil. <strong>Es fundamental entender las propiedades</strong> de cada tipo para disfrutar de un buen mate. En esta sección detallamos por qué <em>algunas marcas destacan</em> sobre otras en el mercado actual.
-        </p>
+    <main class="info">
+        <section class="info__section">
+            <h1 class="info__title">¿Porqué un Top?</h1>
 
-        <iframe width="767" height="432" src="https://www.youtube.com/embed/3Nr77OaM_O4" title="Cómo elegir nuestro mate y la yerba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <img class="info__image" src="./img/ere.jpg" alt="principal">
 
-        <hr>
+            <p class="info__text">
+                Elegir la mejor yerba no es tarea fácil. <strong class="info__strong">Es fundamental entender las propiedades</strong> de cada tipo para disfrutar de un buen mate. En esta sección detallamos por qué <em class="info__emphasis">algunas marcas destacan</em> sobre otras en el mercado actual.
+            </p>
 
-        <h3>Comparativa de Marcas Populares</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Marca</th>
-                    <th>Origen</th>
-                    <th>Intensidad</th>
-                    <th>Estacionado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Playadito</td>
-                    <td>Corrientes</td>
-                    <td>Suave</td>
-                    <td>12 meses</td>
-                </tr>
-                <tr>
-                    <td>Canarias</td>
-                    <td>Brasil/Uruguay</td>
-                    <td>Fuerte</td>
-                    <td>Sin palo</td>
-                </tr>
-                <tr>
-                    <td>Rosamonte</td>
-                    <td>Misiones</td>
-                    <td>Media-Alta</td>
-                    <td>18 meses</td>
-                </tr>
-                <tr>
-                    <td>Taragüi</td>
-                    <td>Corrientes</td>
-                    <td>Media</td>
-                    <td>9 meses</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="4">Datos actualizados a 2024</td>
-                </tr>
-            </tfoot>
-        </table>
+            <iframe class="info__video" src="https://www.youtube.com/embed/3Nr77OaM_O4" title="Cómo elegir nuestro mate y la yerba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <hr>
+            <hr class="info__separator">
 
-        <h3>Tipos de Yerba Disponibles</h3>
-        <ul>
-            <li>Yerba Mate con Palo</li>
-            <li>Yerba Mate Despalada (Sin Palo)</li>
-            <li>Yerba Mate Compuesta
-                <ol>
-                    <li>Mezcla con Hierbas Serranas</li>
-                    <li>Mezcla con Hierbas Digestivas</li>
-                </ol>
-            </li>
-            <li>Yerba Mate Saborizada</li>
-        </ul>
+            <h3 class="info__subtitle">Comparativa de Marcas Populares</h3>
 
-        <h3>Pasos para un buen Cebado</h3>
-        <ol>
-            <li>Calentar el agua sin que llegue a hervir.</li>
-            <li>Llenar el mate hasta las 3/4 partes.</li>
-            <li>Sacudir el mate para quitar el polvillo sobrante.</li>
-            <li>Cebar el primer chorro de agua tibia.</li>
-        </ol>
+            <table class="info__table">
+                <thead class="info__table-head">
+                    <tr class="info__table-row">
+                        <th class="info__table-header">Marca</th>
+                        <th class="info__table-header">Origen</th>
+                        <th class="info__table-header">Intensidad</th>
+                        <th class="info__table-header">Estacionado</th>
+                    </tr>
+                </thead>
 
-        <hr>
+                <tbody class="info__table-body">
+                    <tr class="info__table-row">
+                        <td class="info__table-data">Playadito</td>
+                        <td class="info__table-data">Corrientes</td>
+                        <td class="info__table-data">Suave</td>
+                        <td class="info__table-data">12 meses</td>
+                    </tr>
 
-        <h3>Glosario de Términos</h3>
-        <dl>
-            <dt>Matear</dt>
-            <dd>Acción de beber mate en compañía o de forma individual.</dd>
-            <dt>Cebador</dt>
-            <dd>La persona encargada de preparar y servir el mate a los demás.</dd>
-            <dt>Lavado</dt>
-            <dd>Cuando la yerba pierde su sabor original tras varias cebadas.</dd>
-        </dl>
+                    <tr class="info__table-row">
+                        <td class="info__table-data">Canarias</td>
+                        <td class="info__table-data">Brasil/Uruguay</td>
+                        <td class="info__table-data">Fuerte</td>
+                        <td class="info__table-data">Sin palo</td>
+                    </tr>
 
-    </section>
+                    <tr class="info__table-row">
+                        <td class="info__table-data">Rosamonte</td>
+                        <td class="info__table-data">Misiones</td>
+                        <td class="info__table-data">Media-Alta</td>
+                        <td class="info__table-data">18 meses</td>
+                    </tr>
 
-    <footer style="width: 100%; height: 200px; background-color: aliceblue; text-align: center;"> 
-        <p>Tecnicatura en Análisis de Sistemas Informáticos - Programación III</p>
-        <p>Copyright &copy; 2026 - Rios Esteban</p>
-        <ul style="display: flex; justify-content: center; gap: 20px; padding: 0;">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="info.html">Informacion</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+                    <tr class="info__table-row">
+                        <td class="info__table-data">Taragüi</td>
+                        <td class="info__table-data">Corrientes</td>
+                        <td class="info__table-data">Media</td>
+                        <td class="info__table-data">9 meses</td>
+                    </tr>
+                </tbody>
+
+                <tfoot class="info__table-foot">
+                    <tr class="info__table-row">
+                        <td class="info__table-data info__table-data--footer" colspan="4">Datos actualizados a 2024</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <hr class="info__separator">
+
+            <h3 class="info__subtitle">Tipos de Yerba Disponibles</h3>
+
+            <ul class="info__list">
+                <li class="info__list-item">Yerba Mate con Palo</li>
+                <li class="info__list-item">Yerba Mate Despalada (Sin Palo)</li>
+                <li class="info__list-item">
+                    Yerba Mate Compuesta
+
+                    <ol class="info__sublist">
+                        <li class="info__sublist-item">Mezcla con Hierbas Serranas</li>
+                        <li class="info__sublist-item">Mezcla con Hierbas Digestivas</li>
+                    </ol>
+                </li>
+                <li class="info__list-item">Yerba Mate Saborizada</li>
+            </ul>
+
+            <h3 class="info__subtitle">Pasos para un buen Cebado</h3>
+
+            <ol class="info__steps">
+                <li class="info__steps-item">Calentar el agua sin que llegue a hervir.</li>
+                <li class="info__steps-item">Llenar el mate hasta las 3/4 partes.</li>
+                <li class="info__steps-item">Sacudir el mate para quitar el polvillo sobrante.</li>
+                <li class="info__steps-item">Cebar el primer chorro de agua tibia.</li>
+            </ol>
+
+            <hr class="info__separator">
+
+            <h3 class="info__subtitle">Glosario de Términos</h3>
+
+            <dl class="info__glossary">
+                <dt class="info__term">Matear</dt>
+                <dd class="info__definition">Acción de beber mate en compañía o de forma individual.</dd>
+
+                <dt class="info__term">Cebador</dt>
+                <dd class="info__definition">La persona encargada de preparar y servir el mate a los demás.</dd>
+
+                <dt class="info__term">Lavado</dt>
+                <dd class="info__definition">Cuando la yerba pierde su sabor original tras varias cebadas.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Tecnicatura en Análisis de Sistemas Informáticos - Programación III</p>
+        <p class="footer__text">Copyright &copy; 2026 - Rios Esteban</p>
+
+        <ul class="footer__menu">
+            <li class="header__item"><a class="header__link" href="./index.html">Home</a></li>
+                <li class="header__item"><a class="header__link" href="./info.html">Informacion</a></li>
+                <li class="header__item"><a class="header__link" href="./contacto.html">Contacto</a></li>
         </ul>
     </footer>
 </body>

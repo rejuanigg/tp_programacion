@@ -162,6 +162,133 @@
     object-fit: contain;
 }
 
+.ranking__rates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background-color: rgb(239, 238, 238);
+    border-radius: 12px;
+}
+
+.ranking__rates--types {
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ranking__rates--description {
+    margin: 0;
+    font-size: 18px;
+}
+
+.ranking__rates--options {
+    display: flex;
+    gap: 15px;
+}
+
+.ranking__rates--button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+}
+
+#likeButton {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#likeButton:hover {
+    background-color: #3d9140;
+    transform: translateY(-2px);
+}
+
+#dislikeButton {
+    background-color: #d9534f;
+    color: white;
+}
+
+#dislikeButton:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+}
+
+/* ===== FORMULARIO DE YERBAS ===== */
+
+#nuevasYerbas {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#nombreYerba {
+    width: 300px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#nombreYerba:focus {
+    outline: none;
+    border-color: goldenrod;
+}
+
+#agregarYerba {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#agregarYerba:hover {
+    background-color: rgb(187, 141, 26);
+}
+
+/* ===== CONTENEDOR DE YERBAS ===== */
+
+#contenedorYerba {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Reemplaza tu .itemYerba actual por esta */
+
+.itemYerba {
+    color: #333;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 14px;
+    border-radius: 12px;
+    border-left: 6px solid goldenrod;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.itemYerba:hover {
+    transform: translateX(5px);
+}
+
 .footer {
     width: 100%;
     height: 200px;
@@ -463,4 +590,18 @@
     .info__video {
         height: 220px;
     }
+}
+
+.contact__error {
+    color: red;
+}
+
+.itemYerba {
+    color: #cccccc;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: rebeccapurple;
+    padding: 1px 30px;
 }

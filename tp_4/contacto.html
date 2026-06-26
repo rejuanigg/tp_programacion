@@ -23,23 +23,20 @@
         <h1 class="contact__title">¿Quieres Contactarte con Nosotros?</h1>
 
         <div class="contact__container">
-            <form class="contact__form" action="" method="POST">
+            <form id="contactForm">
                 <fieldset class="contact__fieldset">
                     <legend class="contact__legend">Datos Personales</legend>
 
                     <div class="contact__field">
                         <label class="contact__label" for="nombre">Nombre:</label>
-                        <input class="contact__input" type="text" id="nombre" name="nombre" required>
+                        <input class="contact__input" type="text" id="nombre" name="nombre" >
+                        <p class="contact__error" id="errorNameMessage"></p>
                     </div>
 
                     <div class="contact__field">
                         <label class="contact__label" for="email">Email:</label>
-                        <input class="contact__input" type="email" id="email" name="email" required>
-                    </div>
-
-                    <div class="contact__field">
-                        <label class="contact__label" for="password">Contraseña:</label>
-                        <input class="contact__input" type="password" id="password" name="password" required>
+                        <input class="contact__input" type="email" id="email" name="email" >
+                        <p class="contact__error" id="errorEmailMessage"></p>
                     </div>
                 </fieldset>
 
@@ -109,5 +106,6 @@
                 <li class="header__item"><a class="header__link" href="./contacto.html">Contacto</a></li>
         </ul>
     </footer>
+    <script src="./form.js"></script>
 </body>
 </html>

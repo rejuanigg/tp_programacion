@@ -48,6 +48,17 @@
                 <h3 class="ranking__position">Puesto N°1</h3>
                 <h4 class="ranking__brand">Taragüi</h4>
                 <img class="ranking__image" src="./img/3D+Taragui+Yerba+2024+x+500g+Centenario+L-3278444449.png" alt="Paquete de Yerba Taragüi edición Centenario">
+                <div class="ranking__rates">
+                    <div class="ranking__rates--types">
+                        <p>Likes <span id="likeCounter">0</span></p>
+                        <p>Dislikes <span id="dislikeCounter">0</span></p>
+                    </div>
+                    <p class="ranking__rates--description">¿Bancas?</p>
+                    <div class="ranking__rates--options">
+                        <button id="likeButton" class="ranking__rates--button">Si</button>
+                        <button id="dislikeButton" class="ranking__rates--button">No</button>
+                    </div>
+                </div>
             </div>
 
             <div class="ranking__card">
@@ -62,6 +73,19 @@
                 <img class="ranking__image" src="./img/OIP-3209015301.jpg" alt="Paquete de Yerba Playadito tradicional">
             </div>
         </section>
+
+        <section class="hero">
+            <h4>Para ti... ¿Cuales son las mejores yerbas?</h4>
+            <div id="nuevasYerbas">
+                <input id="nombreYerba" type="text">
+                <button id="agregarYerba">agregar</button>
+            </div>
+            <div id="contenedorYerba">
+                <div id="itemYerba">
+                    
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -74,5 +98,7 @@
                 <li class="header__item"><a class="header__link" href="./contacto.html">Contacto</a></li>
         </ul>
     </footer>
+    <script src="rateHandler.js"></script>
+    <script src="yerbasHandler.js"></script>
 </body>
 </html>
